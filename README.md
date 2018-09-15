@@ -1,5 +1,11 @@
 # Server-side rendering in Create React App
 
+*** VERY IMPORTANT I HAVE USED MANY RESOURCES TO DO THIS APP
+PLEASE IF YOU WANT TO SEE MORE ABOUT ADDING REDUX CHECK HERE :
+
+https://medium.com/bucharestjs/upgrading-a-create-react-app-project-to-a-ssr-code-splitting-setup-9da57df2040a
+
+COPIED: 
 _SSR with all the goodies, without ejecting._
 
 - [Link to Tutorial](https://medium.com/@cereallarceny/server-side-rendering-in-create-react-app-with-all-the-goodies-without-ejecting-4c889d7db25e)
