@@ -1,7 +1,11 @@
 # Server-side rendering in Create React App
 
 *** VERY IMPORTANT I HAVE USED MANY RESOURCES TO DO THIS APP
+I removed redux because i don't want to use it its complicated from my point of view and i prefer formik:
+https://github.com/jaredpalmer/formik
+
 PLEASE IF YOU WANT TO SEE MORE ABOUT ADDING REDUX CHECK HERE :
+
 
 https://medium.com/bucharestjs/upgrading-a-create-react-app-project-to-a-ssr-code-splitting-setup-9da57df2040a
 
