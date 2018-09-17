@@ -1,0 +1,38 @@
+//.example-enter {
+//  opacity: 0.01;
+//}
+//
+//.example-enter.example-enter-active {
+//  opacity: 1;
+//  transition: opacity 500ms ease-in;
+//}
+//
+//.example-leave {
+//  opacity: 1;
+//}
+//
+//.example-leave.example-leave-active {
+//  opacity: 0.01;
+//  transition: opacity 300ms ease-in;
+//}
+
+.fade-enter {
+  opacity: 0.01;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
+.Home {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}

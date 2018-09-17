@@ -1,0 +1,69 @@
+.WhatIsRoomMe {
+    //display: flex;
+    //flex-wrap: nowrap;
+    //flex-direction: column;
+    justify-content: flex-start;
+    background-color: #219688;
+    flex: 1 1 850px;
+    //border:10px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    h4, h3 {
+        color: #ffffff;
+        outline-color: rgb(38, 38, 38);
+        text-rendering: optimizeLegibility;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    span {
+        color: #ffffff;
+        outline-color: #ffffff;
+        text-rendering: optimizeLegibility;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 22px;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+        line-height: normal;
+    }
+    p:nth-child(2) {
+        font-weight: lighter;
+    }
+
+    .logo-indicator {
+        img {
+            max-width: 768px;
+            width: 100%;
+        }
+    }
+
+    .SearchBar {
+        background-color: #3eada1;
+        border: none;
+        svg {
+            color: white;
+        }
+        .search-input {
+            &::-webkit-input-placeholder {
+                color: #a4d7d2;
+            }
+
+            &::-moz-placeholder {
+                color: #a4d7d2;
+            }
+
+            &:-moz-placeholder {
+                color: #a4d7d2;
+            }
+
+            &:-ms-input-placeholder {
+                color: #a4d7d2;
+            }
+        }
+        .option-item_white, .option-item.active {
+            background-color: #3eada1;
+            color: #ffffff;
+        }
+    }
+}

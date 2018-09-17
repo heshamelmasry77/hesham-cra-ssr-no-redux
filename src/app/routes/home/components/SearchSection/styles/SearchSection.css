@@ -1,0 +1,44 @@
+.SearchSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../../../../assets/images/home-page-search.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1 1 650px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 65px; }
+  @media (min-width: 1440px) {
+    .SearchSection {
+      justify-content: center; } }
+  .SearchSection h1 {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    outline-color: #262626;
+    text-rendering: optimizeLegibility; }
+  .SearchSection h1:nth-child(1) span {
+    color: #d50d00; }
+  .SearchSection h1:nth-child(2) span {
+    color: #f4cc43; }
+  .SearchSection .Search .SearchBar {
+    background-color: white; }
+    @media (min-width: 768px) {
+      .SearchSection .Search .SearchBar {
+        border-radius: 4px;
+        max-width: 700px;
+        height: 60px; } }
+    .SearchSection .Search .SearchBar input {
+      background-color: white;
+      color: #3e3e3e; }
+      @media (min-width: 768px) {
+        .SearchSection .Search .SearchBar input {
+          border-radius: 0; } }

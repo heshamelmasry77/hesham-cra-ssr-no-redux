@@ -1,0 +1,75 @@
+$black: #000000;
+
+.GetStarted {
+    justify-content: flex-start;
+    background: $black;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    h4, h3 {
+        color: #ffffff;
+        outline-color: rgb(38, 38, 38);
+        text-rendering: optimizeLegibility;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 15px 0;
+    }
+    span {
+        color: #ffffff;
+        outline-color: rgb(38, 38, 38);
+        text-rendering: optimizeLegibility;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 22px;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+        line-height: normal;
+    }
+    p:nth-child(2) {
+        font-weight: lighter;
+    }
+
+    .logo-indicator {
+        img {
+            max-width: 1090px;
+            width: 100%;
+        }
+    }
+
+    .SearchBar {
+        background-color: #565656;
+        border: none;
+        .search-input {
+
+            &::-webkit-input-placeholder {
+                color: #a4a4a4;
+            }
+
+            &::-moz-placeholder {
+                color: #a4a4a4;
+            }
+
+            &:-moz-placeholder {
+                color: #a4a4a4;
+            }
+
+            &:-ms-input-placeholder {
+                color: #a4a4a4;
+            }
+        }
+        .option-item_white, .option-item.active {
+            background-color: #565656;
+            color: #ffffff;
+        }
+    }
+    .SearchAndLogin {
+        .item {
+            .Registration {
+                @media (max-width: 768px) {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

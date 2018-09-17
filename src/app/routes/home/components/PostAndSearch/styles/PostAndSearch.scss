@@ -1,0 +1,111 @@
+//colors
+$red: #c63e34;
+$white: #fff;
+$green: #19786b;
+$yellow: #ffc600;
+
+.PostAndSearch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  //background: /* top, transparent grey, faked with gradient */
+  //        linear-gradient(
+  //                        rgba(0, 0, 0, 0.40),
+  //                        rgba(0, 0, 0, 0.40)
+  //        ), url('../../../../../assets/images/get-started.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1 1 850px;
+
+  .button {
+    display: inline-block;
+    margin: 0.4em;
+    padding: .8em 2em;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 3px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    width: 435px;
+    @media (max-width: 767px) {
+      width: 300px;
+      font-size: 20px;
+    }
+  }
+
+  .green {
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    background: lighten($green, 3%);
+    border: 1px solid darken($green, 4%);
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+    color: $white;
+  }
+  .green:hover {
+    background: darken($green, 1.5%);
+    border: 1px solid rgba(#000, .05);
+    color: lighten($white, 18%);
+    text-decoration: none;
+    text-shadow: -1px -1px 0 darken($green, 9.5%);
+    transition: all 250ms linear;
+  }
+
+  .red {
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    background: lighten($red, 3%);
+    border: 1px solid darken($red, 4%);
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+    color: $white;
+  }
+  .red:hover {
+    background: darken($red, 1.5%);
+    border: 1px solid rgba(#000, .05);
+    color: lighten($white, 18%);
+    text-decoration: none;
+    text-shadow: -1px -1px 0 darken($red, 9.5%);
+    transition: all 250ms linear;
+  }
+  .yellow {
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    background: lighten($yellow, 3%);
+    border: 1px solid darken($yellow, 4%);
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+    color: $white;
+  }
+  .yellow:hover {
+    background: darken($yellow, 1.5%);
+    border: 1px solid rgba(#000, .05);
+    color: lighten($white, 18%);
+    text-decoration: none;
+    text-shadow: -1px -1px 0 darken($yellow, 9.5%);
+    transition: all 250ms linear;
+  }
+}

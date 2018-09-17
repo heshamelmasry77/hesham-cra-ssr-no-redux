@@ -6,7 +6,7 @@ import fs from 'fs';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import Helmet from 'react-helmet';
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 import { StaticRouter } from 'react-router';
 import { Frontload, frontloadServerRender } from 'react-frontload';
 import Loadable from 'react-loadable';
@@ -17,7 +17,7 @@ import App from '../src/app/app';
 import manifest from '../build/asset-manifest.json';
 
 // Some optional Redux functions related to user authentication
-import { setCurrentUser, logoutUser } from '../src/modules/auth';
+// import { setCurrentUser, logoutUser } from '../src/modules/auth';
 
 // LOADER
 export default (req, res) => {
@@ -54,7 +54,7 @@ export default (req, res) => {
       }
 
       // Create a store (with a memory history) from our current url
-      const { store } = createStore(req.url);
+      // const { store } = createStore(req.url);
 
       // If the user has a cookie (i.e. they're signed in) - set them as the current user
       // Otherwise, we want to set the current state to be logged out, just in case this isn't the default

@@ -1,0 +1,45 @@
+.GetStarted {
+  justify-content: flex-start;
+  background: #000000;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column; }
+  .GetStarted h4, .GetStarted h3 {
+    color: #ffffff;
+    outline-color: #262626;
+    text-rendering: optimizeLegibility;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 15px 0; }
+  .GetStarted span {
+    color: #ffffff;
+    outline-color: #262626;
+    text-rendering: optimizeLegibility;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px; }
+  .GetStarted p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: normal; }
+  .GetStarted p:nth-child(2) {
+    font-weight: lighter; }
+  .GetStarted .logo-indicator img {
+    max-width: 1090px;
+    width: 100%; }
+  .GetStarted .SearchBar {
+    background-color: #565656;
+    border: none; }
+    .GetStarted .SearchBar .search-input::-webkit-input-placeholder {
+      color: #a4a4a4; }
+    .GetStarted .SearchBar .search-input::-moz-placeholder {
+      color: #a4a4a4; }
+    .GetStarted .SearchBar .search-input:-moz-placeholder {
+      color: #a4a4a4; }
+    .GetStarted .SearchBar .search-input:-ms-input-placeholder {
+      color: #a4a4a4; }
+    .GetStarted .SearchBar .option-item_white, .GetStarted .SearchBar .option-item.active {
+      background-color: #565656;
+      color: #ffffff; }
+  @media (max-width: 768px) {
+    .GetStarted .SearchAndLogin .item .Registration {
+      justify-content: center; } }

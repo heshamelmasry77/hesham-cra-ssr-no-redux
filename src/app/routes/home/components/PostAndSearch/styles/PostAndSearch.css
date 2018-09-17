@@ -1,0 +1,90 @@
+.PostAndSearch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../../../../assets/images/get-started.jpg") no-repeat center center;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1 1 850px; }
+  .PostAndSearch .button {
+    display: inline-block;
+    margin: 0.4em;
+    padding: .8em 2em;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 3px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    width: 435px; }
+    @media (max-width: 767px) {
+      .PostAndSearch .button {
+        width: 300px;
+        font-size: 20px; } }
+  .PostAndSearch .green {
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    background: #1c8576;
+    border: 1px solid #15675c;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+    color: #fff; }
+  .PostAndSearch .green:hover {
+    background: #187265;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    color: white;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #115047;
+    transition: all 250ms linear; }
+  .PostAndSearch .red {
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    background: #cc473d;
+    border: 1px solid #b63930;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+    color: #fff; }
+  .PostAndSearch .red:hover {
+    background: #c03c32;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    color: white;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #a0322a;
+    transition: all 250ms linear; }
+  .PostAndSearch .yellow {
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    background: #ffc90f;
+    border: 1px solid #ebb600;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+    color: #fff; }
+  .PostAndSearch .yellow:hover {
+    background: #f7c000;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    color: white;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #cfa000;
+    transition: all 250ms linear; }

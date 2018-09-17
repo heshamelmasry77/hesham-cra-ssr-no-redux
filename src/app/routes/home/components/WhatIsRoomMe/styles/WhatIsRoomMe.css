@@ -1,0 +1,43 @@
+.WhatIsRoomMe {
+  justify-content: flex-start;
+  background-color: #219688;
+  flex: 1 1 850px;
+  display: flex;
+  flex-direction: column; }
+  .WhatIsRoomMe h4, .WhatIsRoomMe h3 {
+    color: #ffffff;
+    outline-color: #262626;
+    text-rendering: optimizeLegibility;
+    font-family: 'Josefin Sans', sans-serif; }
+  .WhatIsRoomMe span {
+    color: #ffffff;
+    outline-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px; }
+  .WhatIsRoomMe p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: normal; }
+  .WhatIsRoomMe p:nth-child(2) {
+    font-weight: lighter; }
+  .WhatIsRoomMe .logo-indicator img {
+    max-width: 768px;
+    width: 100%; }
+  .WhatIsRoomMe .SearchBar {
+    background-color: #3eada1;
+    border: none; }
+    .WhatIsRoomMe .SearchBar svg {
+      color: white; }
+    .WhatIsRoomMe .SearchBar .search-input::-webkit-input-placeholder {
+      color: #a4d7d2; }
+    .WhatIsRoomMe .SearchBar .search-input::-moz-placeholder {
+      color: #a4d7d2; }
+    .WhatIsRoomMe .SearchBar .search-input:-moz-placeholder {
+      color: #a4d7d2; }
+    .WhatIsRoomMe .SearchBar .search-input:-ms-input-placeholder {
+      color: #a4d7d2; }
+    .WhatIsRoomMe .SearchBar .option-item_white, .WhatIsRoomMe .SearchBar .option-item.active {
+      background-color: #3eada1;
+      color: #ffffff; }

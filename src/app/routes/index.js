@@ -11,6 +11,11 @@ const Homepage = Loadable({
   loading: () => null,
   modules: ['homepage']
 });
+const Home = Loadable({
+  loader: () => import(/* webpackChunkName: "home" */ './home'),
+  loading: () => null,
+  modules: ['home']
+});
 
 const About = Loadable({
   loader: () => import(/* webpackChunkName: "about" */ './about'),
@@ -44,7 +49,7 @@ const Logout = Loadable({
 
 export default () => (
   <Switch>
-    <Route exact path="/" component={Homepage} />
+    <Route exact path="/" component={Home} />
     <Route exact path="/about" component={About} />
 
     {/*<Route exact path="/profile/:id" component={Profile} />*/}

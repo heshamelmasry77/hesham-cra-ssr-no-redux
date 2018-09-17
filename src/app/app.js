@@ -14,6 +14,10 @@ import Routes from './routes';
 import './app.css';
 
 class App extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   componentWillMount() {
     // if (!isServer) {
     //   this.props.establishCurrentUser();
