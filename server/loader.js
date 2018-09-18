@@ -6,18 +6,17 @@ import fs from 'fs';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import Helmet from 'react-helmet';
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 import { StaticRouter } from 'react-router';
 import { Frontload, frontloadServerRender } from 'react-frontload';
 import Loadable from 'react-loadable';
 
 // Our store, entrypoint, and manifest
-import createStore from '../src/store';
 import App from '../src/app/app';
 import manifest from '../build/asset-manifest.json';
 
 // Some optional Redux functions related to user authentication
-import { setCurrentUser, logoutUser } from '../src/modules/auth';
+// import { setCurrentUser, logoutUser } from '../src/modules/auth';
 
 // LOADER
 export default (req, res) => {
@@ -54,7 +53,7 @@ export default (req, res) => {
       }
 
       // Create a store (with a memory history) from our current url
-      const { store } = createStore(req.url);
+      // const { store } = createStore(req.url);
 
       // If the user has a cookie (i.e. they're signed in) - set them as the current user
       // Otherwise, we want to set the current state to be logged out, just in case this isn't the default
@@ -85,11 +84,11 @@ export default (req, res) => {
         renderToString(
           <Loadable.Capture report={m => modules.push(m)}>
             {/*<Provider store={store}>*/}
-              <StaticRouter location={req.url} context={context}>
-                <Frontload isServer>
-                  <App />
-                </Frontload>
-              </StaticRouter>
+            <StaticRouter location={req.url} context={context}>
+              <Frontload isServer>
+                <App />
+              </Frontload>
+            </StaticRouter>
             {/*</Provider>*/}
           </Loadable.Capture>
         )
@@ -102,38 +101,38 @@ export default (req, res) => {
         //
         //   res.end();
         // } else {
-          // Otherwise, we carry on...
+        // Otherwise, we carry on...
 
-          // Let's give ourself a function to load all our page-specific JS assets for code splitting
-          const extractAssets = (assets, chunks) =>
-            Object.keys(assets)
-              .filter(asset => chunks.indexOf(asset.replace('.js', '')) > -1)
-              .map(k => assets[k]);
+        // Let's give ourself a function to load all our page-specific JS assets for code splitting
+        const extractAssets = (assets, chunks) =>
+          Object.keys(assets)
+            .filter(asset => chunks.indexOf(asset.replace('.js', '')) > -1)
+            .map(k => assets[k]);
 
-          // Let's format those assets into pretty <script> tags
-          const extraChunks = extractAssets(manifest, modules).map(
-            c => `<script type="text/javascript" src="/${c}"></script>`
-          );
+        // Let's format those assets into pretty <script> tags
+        const extraChunks = extractAssets(manifest, modules).map(
+          c => `<script type="text/javascript" src="/${c}"></script>`
+        );
 
-          // We need to tell Helmet to compute the right meta tags, title, and such
-          const helmet = Helmet.renderStatic();
+        // We need to tell Helmet to compute the right meta tags, title, and such
+        const helmet = Helmet.renderStatic();
 
-          // NOTE: Disable if you desire
-          // Let's output the title, just to see SSR is working as intended
-          console.log('THE TITLE', helmet.title.toString());
+        // NOTE: Disable if you desire
+        // Let's output the title, just to see SSR is working as intended
+        console.log('THE TITLE', helmet.title.toString());
 
-          // Pass all this nonsense into our HTML formatting function above
-          const html = injectHTML(htmlData, {
-            html: helmet.htmlAttributes.toString(),
-            title: helmet.title.toString(),
-            meta: helmet.meta.toString(),
-            body: routeMarkup,
-            scripts: extraChunks,
-            // state: JSON.stringify(store.getState()).replace(/</g, '\\u003c')
-          });
+        // Pass all this nonsense into our HTML formatting function above
+        const html = injectHTML(htmlData, {
+          html: helmet.htmlAttributes.toString(),
+          title: helmet.title.toString(),
+          meta: helmet.meta.toString(),
+          body: routeMarkup,
+          scripts: extraChunks,
+          // state: JSON.stringify(store.getState()).replace(/</g, '\\u003c')
+        });
 
-          // We have all the final HTML, let's send it to the user already!
-          res.send(html);
+        // We have all the final HTML, let's send it to the user already!
+        res.send(html);
         // }
       });
     }
